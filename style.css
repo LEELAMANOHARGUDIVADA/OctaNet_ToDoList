@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo_app{
+    margin-top: 100px;
+    width: 500px;
+    
+}
+.container{
+    padding: 2em 2.5em;
+    background-color: #ffd65d;
+    border-radius: 10px;
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.35);
+}
+.wrapper{
+    position: relative;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    gap: 20px;
+}
+.wrapper input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 50px;
+    color: #252525;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.wrapper button{
+    border: 0;
+    background-color: #5a85fd;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+#error{
+    display: none;
+    background-color: #fff;
+    color: red;
+    margin-top: 25px;
+    padding: 15px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+.task-container{
+    width: 500px;
+    margin-top: 20px;
+}
+.task-container .task{
+    margin-bottom: 15px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.task input[type="checkbox"]{
+    position: relative;
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #e1e1e1;
+}
+.task input[type="checkbox"]:checked {
+    background-color: green;
+    color: #fff;
+}
+
+.task span {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0 20px;
+}
+.icons button{
+    outline: 0;
+    border: 0;
+}
+.icons button:nth-child(1) i{
+    background-color: #5a85fd;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.icons button:nth-child(2) i{
+    background-color: pink;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
