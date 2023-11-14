@@ -120,3 +120,21 @@ body{
     cursor: pointer;
 
 }
+@media screen and (max-width: 500px) {
+    .todo_app{
+        width: 360px;
+    }
+    .wrapper input{
+        font-size: 17px;
+    }
+    .wrapper button{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .task span{
+        font-size: 15px;
+    }
+    .task-container{
+        width: 360px;
+    }
+}
